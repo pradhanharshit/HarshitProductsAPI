@@ -1,8 +1,6 @@
 const mongoose = require("mongoose");
 
-uri = "mongodb+srv://hpradhan:iSjzwuRVU2EZ9wbT@harshit-productsapi.rwsozkf.mongodb.net/Harshit-ProductsAPI?retryWrites=true&w=majority"
-
-const connectDB = () => {
+const connectDB = (uri) => {
     console.log("connect db");  
     return mongoose.connect(uri,{
         useNewUrlParser: true,
