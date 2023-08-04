@@ -39,14 +39,14 @@ const getAllProducts = async (req, res) => {
 
     // to add pagination
     let page = Number(req.query.page) || 1;
-    let limit = Number(req.query.limit) || 3;
+    let limit = Number(req.query.limit) || 10;
     let skip = ( page - 1) * limit;
 
     apiData = apiData.skip(skip).limit(limit);
     // console.log();
 
     // req.query prop add krdia hai
-    const myData = await apiData;
+    const Products = await apiData;
     res.status(200)
     .json({ myData });
 }  
@@ -83,13 +83,13 @@ const getAllProductsTesting = async (req, res) => {
 
     // to add pagination
     let page = Number(req.query.page) || 1;
-    let limit = Number(req.query.limit) || 3;
+    let limit = Number(req.query.limit) || 10;
     let skip = ( page - 1) * limit;
 
     apiData = apiData.skip(skip).limit(limit);
 
     // req.query prop add krdia hai
-    const myData = await apiData;
+    const Products = await apiData;
     res.status(200)
     .json({ myData });
 }  
