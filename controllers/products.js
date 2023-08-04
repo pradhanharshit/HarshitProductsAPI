@@ -48,7 +48,7 @@ const getAllProducts = async (req, res) => {
     // req.query prop add krdia hai
     const Products = await apiData;
     res.status(200)
-    .json({ myData });
+    .json({ Products });
 }  
 
 const getAllProductsTesting = async (req, res) => {
@@ -91,7 +91,7 @@ const getAllProductsTesting = async (req, res) => {
     // req.query prop add krdia hai
     const Products = await apiData;
     res.status(200)
-    .json({ myData });
+    .json({ Products });
 }  
 
 module.exports = {getAllProducts, getAllProductsTesting};
