@@ -1,0 +1,29 @@
+[
+    {
+        "name": "iphone",
+        "price": "20000",
+        "featured": "true",
+        "company": "apple"
+    },
+    {
+        "name": "iphone10",
+        "price": "30000",
+        "featured": "true",
+        "company": "apple"
+    },
+    {
+        "name": "inspiron5",
+        "price": "50000",
+        "company": "dell"
+    },
+    {
+        "name": "note8",
+        "price": "18000",
+        "company": "mi"
+    },
+    {
+        "name": "galaxynote8",
+        "price": "40000",
+        "company": "samsung"
+    }
+]
